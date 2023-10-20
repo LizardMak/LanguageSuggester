@@ -1,18 +1,22 @@
 .resultRuby {
-  color:rgb(174, 5, 5);
-  font-weight:bold;
+  color: rgb(174, 5, 5);
+  font-weight: bold;
 }
+
 .resultC {
-  color:royalblue;
-  font-weight:bold;
+  color: royalblue;
+  font-weight: bold;
 }
+
 .resultPython {
-  color:rgb(201, 201, 24);
-  font-weight:bold;
+  color: rgb(201, 201, 24);
+  font-weight: bold;
 }
+
 .hidden {
-  display:none;
+  display: none;
 }
+
 .sizeLimit {
-  height:50px;
+  height: 50px;
 }

@@ -1,69 +1,72 @@
 <!DOCTYPE html>
-<html lang = "en-US">
+<html lang="en-US">
+
 <head>
-<script src="js/scripts.js"></script>
-<link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
   <h1>Programming Language Suggester</h1>
   <h3>What programming language is right for you?</h3>
-<br>
-<form id="radio-form">
-  <label for="question1">Are you a dog person or a cat person?</label>
-  <br><br>
-  <input id="question1" type="radio" name="name" value="positive" checked>Dogs</input>
   <br>
-  <input id="question1" type="radio" name="name" value="negative">Cats</input>
-  <br><br>
-  <label for="question2">Would you rather go forward or backward in time?</label>
-  <br><br>
-  <input id="question2" type="radio" name="name2" value="positive" checked>Forward</input>
-  <br>
-  <input id="question2" type="radio" name="name2" value="negative">Backward</input>
-  <br><br>
-  <label for="question3">Does pineapple belong on pizza?</label>
-  <br><br>
-  <input id="question3" type="radio" name="name3" value="positive" checked>Yes</input>
-  <br>
-  <input id="question3" type="radio" name="name3" value="negative">No</input>
-  <br><br>
-  <label for="question4">Minecraft vs. Roblox</label>
-  <br><br>
-  <input id="question4" type="radio" name="name4" value="positive" checked>Minecraft</input>
-  <br>
-  <input id="question4" type="radio" name="name4" value="negative">Roblox</input>
-  <br><br>
-  <label for="question5">Are there aliens among us?</label>
-  <br>
-  <input id="question5" type="radio" name="name5" value="positive" checked>Yes (sus)</input>
-  <br>
-  <input id="question5" type="radio" name="name5" value="negative">No</input>
-  <br><br>
-  <label for="question6">Are there more doors or wheels in the world?</label>
-  <br>
-  <input id="question6" type="radio" name="name6" value="positive" checked>Wheels</input>
-  <br>
-  <input id="question6" type="radio" name="name6" value="negative">Doors</input>
-  <br><br>
-  <label for="question7">Do you speak English?</label>
-  <br>
-  <input id="question7" type="radio" name="name7" value="positive" checked>Что?</input>
-  <br>
-  <input id="question7" type="radio" name="name7" value="negative">Yes, I do, my dear teacher. I speak English very well.</input>
-  <br><br>
-  <label for="question8">Would you rather have unlimited bacon, but not more video games, <br>or would you rather have games, <strong>unlimited games</strong>, but no games?</label>
-  <br>
-  <input id="question8" type="radio" name="name8" value="positive" checked>Bacon</input>
-  <br>
-  <input id="question8" type="radio" name="name8" value="negative">Games</input>
-  <br><br>
-  <button type="submit">Submit!</button>
-</form>
+  <form id="radio-form">
+    <label for="question1">Are you a dog person or a cat person?</label>
+    <br><br>
+    <input id="question1" type="radio" name="question1" value="positive" checked>Dogs</input>
+    <br>
+    <input id="question1" type="radio" name="question1" value="negative">Cats</input>
+    <br><br>
+    <label for="question2">Would you rather go forward or backward in time?</label>
+    <br><br>
+    <input id="question2" type="radio" name="question2" value="positive" checked>Forward</input>
+    <br>
+    <input id="question2" type="radio" name="question2" value="negative">Backward</input>
+    <br><br>
+    <label for="question3">Does pineapple belong on pizza?</label>
+    <br><br>
+    <input id="question3" type="radio" name="question3" value="positive" checked>Yes</input>
+    <br>
+    <input id="question3" type="radio" name="question3" value="negative">No</input>
+    <br><br>
+    <label for="question4">Minecraft vs. Roblox</label>
+    <br><br>
+    <input id="question4" type="radio" name="question4" value="positive" checked>Minecraft</input>
+    <br>
+    <input id="question4" type="radio" name="question4" value="negative">Roblox</input>
+    <br><br>
+    <label for="question5">Are there aliens among us?</label>
+    <br>
+    <input id="question5" type="radio" name="question5" value="positive" checked>Yes (sus)</input>
+    <br>
+    <input id="question5" type="radio" name="question5" value="negative">No</input>
+    <br><br>
+    <label for="question6">Are there more doors or wheels in the world?</label>
+    <br>
+    <input id="question6" type="radio" name="question6" value="positive" checked>Wheels</input>
+    <br>
+    <input id="question6" type="radio" name="question6" value="negative">Doors</input>
+    <br><br>
+    <label for="question7">Do you speak English?</label>
+    <br>
+    <input id="question7" type="radio" name="question7" value="positive" checked>Что?</input>
+    <br>
+    <input id="question7" type="radio" name="question7" value="negative">Yes, I do, my dear teacher. I speak English very well.</input>
+    <br><br>
+    <label for="question8">Would you rather have unlimited bacon, but not more video games, <br>or would you rather have games, <strong>unlimited games</strong>, but no games?</label>
+    <br>
+    <input id="question8" type="radio" name="question8" value="positive" checked>Bacon</input>
+    <br>
+    <input id="question8" type="radio" name="question8" value="negative">Games</input>
+    <br><br>
+    <button type="submit">Submit!</button>
+  </form>
 </body>
 <h3 id="result"></h3>
 <img id="ruby" class="hidden" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2048px-Ruby_logo.svg.png">
 <img id="python" class="hidden" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/701px-Python-logo-notext.svg.png">
 <img id="c" class="hidden" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
-<br><br><br> 
+<br><br><br>
 <img id="sus" class="hidden" src="https://media.tenor.com/NFy4TVG3DUcAAAAd/among-us-sus.gif">
+
 </html>
