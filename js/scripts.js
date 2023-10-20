@@ -53,4 +53,7 @@ function getResults(e) {
   window.alert("edefaultworking");
   let finalResults = calculateResults();
   console.log("is: " + finalResults);
+  if (finalResults >= -2 && finalResults <= 2) {
+    document.getElementById("result").innerText = "We recommend that you learn C!";
+  }
   }
