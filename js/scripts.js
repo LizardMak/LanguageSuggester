@@ -47,7 +47,7 @@ function calculateResults() {
   console.log("should be: " + results)
   return results; 
 }
-
+//UI logic
 function getResults(e) {
   e.preventDefault();
   window.alert("edefaultworking");
