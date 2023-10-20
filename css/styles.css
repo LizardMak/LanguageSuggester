@@ -10,3 +10,9 @@
   color:rgb(201, 201, 24);
   font-weight:bold;
 }
+.hidden {
+  display:none;
+}
+.sizeLimit {
+  height:50px;
+}

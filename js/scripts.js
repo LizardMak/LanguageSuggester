@@ -26,8 +26,10 @@ function calculateResults() {
   };
   if (document.querySelector("input[name='name5']:checked").value === "positive") {
     results = results + 1;
+    document.getElementById("sus").removeAttribute("class");
   } else if (document.querySelector("input[name='name5']:checked").value === "negative") {
     results = results - 1;
+    document.getElementById("sus").setAttribute("class", "hidden");
   };
   if (document.querySelector("input[name='name6']:checked").value === "positive") {
     results = results + 1;
@@ -55,12 +57,21 @@ function getResults(e) {
   console.log("is: " + finalResults);
   if (finalResults >= -2 && finalResults <= 2) {
     document.getElementById("result").setAttribute('class', 'resultC');
+    document.getElementById("python").setAttribute('class', 'hidden');
+    document.getElementById("ruby").setAttribute('class', 'hidden');
+    document.getElementById("c").setAttribute('class', 'sizeLimit');
     document.getElementById("result").innerText = "We recommend that you learn C!";
   } else if (finalResults <= -4 && finalResults >= -8) {
     document.getElementById("result").setAttribute('class', 'resultPython');
+    document.getElementById("c").setAttribute('class', 'hidden');
+    document.getElementById("ruby").setAttribute('class', 'hidden');
+    document.getElementById("python").setAttribute('class', 'sizeLimit');
     document.getElementById("result").innerText = "We recommend that you learn Python!";
   } else {
     document.getElementById("result").setAttribute('class', 'resultRuby');
+    document.getElementById("c").setAttribute('class', 'hidden');
+    document.getElementById("python").setAttribute('class', 'hidden');
+    document.getElementById("ruby").setAttribute('class', 'sizeLimit');
     document.getElementById("result").innerText = "We recommend that you learn Ruby!";
   }
   }
