@@ -55,5 +55,9 @@ function getResults(e) {
   console.log("is: " + finalResults);
   if (finalResults >= -2 && finalResults <= 2) {
     document.getElementById("result").innerText = "We recommend that you learn C!";
+  } else if (finalResults <= -4 && finalResults >= -8) {
+    document.getElementById("result").innerText = "We recommend that you learn Python!";
+  } else {
+    document.getElementById("result").innerText = "We recommend that you learn Ruby!";
   }
   }
